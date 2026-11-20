@@ -5,23 +5,23 @@
 class Up < Formula
   desc "Troubleshoot problems with your Internet connection based on different protocols and well-known public servers.\n"
   homepage "https://github.com/jesusprubio/up"
-  version "1.3.3"
+  version "1.4.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jesusprubio/up/releases/download/v1.3.3/up_1.3.3_darwin_amd64.tar.xz"
-      sha256 "118be62e00d5d5c579dc6f8938d1c97ddb11fd282b2ce733cc3b9f0bd322e0d3"
+      url "https://github.com/jesusprubio/up/releases/download/v1.4.0/up_1.4.0_darwin_amd64.tar.xz"
+      sha256 "f7f27ab992743b2dfdec7c6e7ec213f9c7b0287c97791d70b2103e12d9a43b20"
 
       define_method(:install) do
         bin.install "up"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jesusprubio/up/releases/download/v1.3.3/up_1.3.3_darwin_arm64.tar.xz"
-      sha256 "eece27de1aad850211fdea6e7b7bc94b944c35e4e9e8e006d5df4665efcd63e2"
+      url "https://github.com/jesusprubio/up/releases/download/v1.4.0/up_1.4.0_darwin_arm64.tar.xz"
+      sha256 "d1495566fcf2410d2409c046c1a95c2fd51d01d87707f79b8a044ea8f9b03210"
 
       define_method(:install) do
         bin.install "up"
@@ -31,15 +31,15 @@ class Up < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jesusprubio/up/releases/download/v1.3.3/up_1.3.3_linux_amd64.tar.xz"
-      sha256 "9d4ddb59bd35a79a0d11e6ecb3b406e005fff96608ca5a1e30901c9f8da8a87e"
+      url "https://github.com/jesusprubio/up/releases/download/v1.4.0/up_1.4.0_linux_amd64.tar.xz"
+      sha256 "212fd0329c9f72aa0eba66403ff389464f6ddd3b050dac8452e7bbcde6fdb28e"
       define_method(:install) do
         bin.install "up"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jesusprubio/up/releases/download/v1.3.3/up_1.3.3_linux_arm64.tar.xz"
-      sha256 "cb651de7b0f2edbee069224013c6d0373405e383f12525783d0ceafde6d3968c"
+      url "https://github.com/jesusprubio/up/releases/download/v1.4.0/up_1.4.0_linux_arm64.tar.xz"
+      sha256 "dbfc98a6fa31ec69f6360b9a86e8e36be9c518ff5d1fcad0f0fcb4e3dc1451c2"
       define_method(:install) do
         bin.install "up"
       end
